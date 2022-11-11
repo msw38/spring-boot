@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: mswspringboot 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mswspringboot
+  template:
+    metadata:
+      labels:
+        app: mswspringboot 
+    spec:
+      containers:
+        - name: mswspringboot 
+          image: msw38registry.azurecr.io/mswspringboot
+          ports:
+          - containerPort: 8080
