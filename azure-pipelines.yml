@@ -6,8 +6,8 @@
 trigger:
 - main
 
-pool:
-  vmImage: ubuntu-latest
+pool: pipeline-agent
+
 
 steps:
 - task: Maven@3
