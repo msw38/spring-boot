@@ -6,8 +6,6 @@
 trigger:
 - main
 
-pool:
-
 jobs:
   - job: build
     pool: pipe-agent
