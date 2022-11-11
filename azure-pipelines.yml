@@ -6,8 +6,8 @@
 trigger:
 - main
 
-pool:
-  vmImage: ubuntu-latest
+pool: pipe1
+
 
 steps:
 - task: Maven@3
