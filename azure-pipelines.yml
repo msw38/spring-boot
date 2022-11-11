@@ -6,11 +6,12 @@
 trigger:
 - main
 
-pool: pipe-agent
+pool:
 
 jobs:
   - job: build
-    pool:
-      vmImage: 'ubuntu-latest'
+    pool: pipe-agent
     steps:
-      - script: mvn package
+      - script:
+          mvn version
+          mvn package
